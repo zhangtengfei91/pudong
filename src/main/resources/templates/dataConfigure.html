@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>数据管理</title>
+    <link rel="stylesheet" href="/css/common2.css">
+    <link rel="icon" href="/img/logoPre.ico">
+
+    <link rel="stylesheet" href="/css/kendo/kendo.common.min.css">
+    <link rel="stylesheet" href="/css/kendo/kendo.bootstrap.min.css">
+    <link rel="stylesheet" href="/css/kendo.default.min.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/kendo/kendo.all.min.js"></script>
+    <script src="/js/kendo/kendo.culture.zh-CN.min.js"></script>
+    <script src="/js/kendo/kendo.messages.zh-CN.min.js"></script>
+    <link rel="icon" href="/img/logoPre.ico">
+    <link rel="stylesheet" href="/js/kendo.rtl.min.css"/>
+    <link rel="stylesheet" href="/js/kendo.silver.min.css"/>
+    <link rel="stylesheet" href="/js/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/stylenav.css">
+    <script src="/js/drawDynamicLine.js"></script>
+    <script src="/js/kendo/kendo.all.min.js"></script>
+    <script src="/js/kendo/kendo.culture.zh-CN.min.js"></script>
+    <script src="/js/kendo/kendo.messages.zh-CN.min.js"></script>
+    <script src="/js/kendo/kendo.web.min.js"></script>
+</head>
+<body>
+<div>
+    
+    <div>
+        <!-- header -->
+        <div>
+            <!-- header -->
+            <div class="topTitle">
+                <div class="logo">
+                    <img class="logo-img" src="/img/logoPre.png" alt="logo">
+                    <span class="logo-word">浦东新区海洋综合管理信息系统</span>
+                </div>
+                <div class="nav">
+                    <nav>
+                        <ul class="content clearfix">
+                            <li><a href="/index" class="head">首页</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="head">关于我们</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">单位介绍</a></li>
+                                    <li><a href="">海洋状况</a></li>
+                                    <li><a href="">主要职能</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="head">政策法规</a>
+                                <ul class="sub-menu">
+
+                                    <li class="dropdown">
+                                        <a href="">海洋规划 ></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="" >国家规划</a></li>
+                                            <li><a href="">上海规划</a></li>
+                                            <li><a href="">新区规划</a></li>
+                                            <li><a href="">其他</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="">政策法规 ></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">国家法规</a></li>
+                                            <li><a href="">上海法规</a></li>
+                                            <li><a href="/pj/ocean" target="_blank">新区法规</a></li>
+                                            <li><a href="">其他</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="" class="head">海洋经济</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">总体情况</a></li>
+
+                                    <li class="dropdown">
+                                        <a href="">重点领域 ></a>
+                                        <ul class="sub-menu">
+                                            <li class="dropdown">
+                                                <a href="">产业 ></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="">海工装备</a></li>
+                                                    <li><a href="">船舶</a></li>
+                                                    <li><a href="">海洋信息</a></li>
+                                                    <li><a href="">海洋生物</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="">滨河 ></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="">渔业</a></li>
+                                                    <li><a href="">能源</a></li>
+                                                    <li><a href="">其他</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="">岸线</a></li>
+                                            <li><a href="">旅游</a></li>
+                                            <li><a href="">其他</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="">重点区域 ></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">产业基地</a></li>
+                                            <li><a href="">海洋创新园</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">其他</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="head">海洋管理</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/front" target="_blank">用海管理</a></li>
+                                    <li><a href="" target="_blank">海洋环保 </a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="head">海洋环境 ></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/pj/seaSurvaillance" target="_blank">海水环境</a></li>
+                                            <li><a href="/pj/seaBioCondi" target="_blank">海洋生物</a></li>
+                                            <li><a href="/pj/sewageOutfall" target="_blank">排污口</a></li>
+                                            <li><a href="/pj/seaSediment" target="_blank">沉积物</a></li>
+                                            <li><a href="/pj/seaBioCondi" target="_blank">环境预警</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="head">防灾减灾 ></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/front" target="_blank">风暴潮</a></li>
+                                            <li><a href="/pj/seawaterIntrusion" target="_blank">海水入侵</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a  class="head">视频监管</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/pj/videoSurvaillance" target="_blank">固定监管</a></li>
+                                    <li><a href="/pj/vehicleVideos" target="_blank">移动监管</a></li>
+                                    <li><a href="#">三维展示</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a  class="head">后台管理</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/pj/dataConfigure" target="_blank">数据管理</a></li>
+                                    <li><a href="/pj/loginArcServer" target="_blank">服务交换</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main" style="height:700px;">
+        <div id="example">
+            <div id="tabStrip" hidden="hidden" >
+                <ul>
+                    <li class="k-state-active">海洋工程</li>    <!--默认展开tabStrip-->
+                    <li>法律法规</li>
+                    <li>海洋调查</li>
+                </ul>
+
+                <div class="col-xs-12 col-sm-8">
+                    <div id="enginGrid"  ></div>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <div  id="lawGrid"></div>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <div id="surveyGrid" ></div>
+                </div>
+            </div>
+            <!--<div id="enginGrid"></div>-->
+        </div>
+
+        <div id="enginWnd"hidden="hidden">
+            <div>
+                标题
+                <input id="title" style="width:300px;height:20px">
+            </div>
+            <div>
+                内容
+                <textarea id="introduction" style="width:95%;height:200px"></textarea>
+            </div>
+            <div>
+                <button id="saveEngin"  class="k-button" onclick="submitEngin()">
+                    <i class="icon-ok"></i>
+                    保存
+                </button>
+                <button id="closeEngin"  class="k-button">
+                    <i class="icon-remove"></i>
+                    关闭
+                </button>
+            </div>
+        </div>
+
+        <div id="lawWnd" hidden="hidden">
+            <div>
+                标题
+            <input id="titleLaw" style="width:300px;height:20px">
+            </div>
+            <div>
+                内容
+            <textarea id="introductionLaw" style="width:95%;height:200px"></textarea>
+            </div>
+                <div>
+                <button id="saveLaw"  class="k-button" onclick="submitLaw()">
+                    保存
+                </button>
+                <button id="closeLaw"  class="k-button"  >
+                    关闭
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="surveyWnd">
+        <div>
+            标题
+        <input id="titlesurvey" style="width:300px;height:20px">
+            <br>
+            <text>内容</text>
+        <textarea id="introductionsurvey" style="width:95%;height:200px"></textarea>
+            </div>
+        <div>
+            <button id="saveE<ngin></ngin>"  class="k-button" onclick="submitSurvey()">
+                <i class="icon-ok"></i>
+                保存
+            </button>
+            <button id="closeSurvey"  class="k-button">
+                <i class="icon-remove"></i>
+                关闭
+            </button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer" style="background: #20326b">
+        <div style="color:#ffffff;position: relative;height: 45px;display: flex;justify-content: center;align-items: center">@版权所有：浦东新区科经委(海洋处)</div>
+    </div>
+</div>
+
+<script type="text/javascript" th:inline="javascript">
+    $("#tabStrip").show();
+    var tabStrip = $("#tabStrip").kendoTabStrip().data("kendoTabStrip");
+
+
+    //海洋工程
+    kendo.culture("zh-CN");
+    $("#enginGrid").kendoGrid({
+        toolbar: [
+            {
+                template: '<a class="k-button" href="\\#" onclick="return addEngin()">添加</a>'
+            }
+        ],
+        columns: [
+//            { field: "id",
+//            attributes: {
+//            "class": "table-cell",
+//            style: "text-align: center; font-size: 14px;line-height:50px"
+//            }},
+            { field: "title",title:"标题",width:"20%",attributes: {
+                "class": "table-cell",
+                style: "text-align: left; font-size: 14px;line-height:50px;overflow: hidden;\n" +
+                "text-overflow:ellipsis;\n" +
+                "white-space: nowrap;"
+            }},
+            { field: "introduction",title:"简介",attributes: {
+                "class": "table-cell",
+                style: "text-align: center; font-size: 14px;line-height:50px;overflow: hidden;\n" +
+                "text-overflow:ellipsis;\n" +
+                "white-space: nowrap;"
+            }},
+            { command:[{text:"编辑",click:showEngin},{text:"删除",click:delEngin}],width:"20%",attributes: {
+                "class": "table-cell",
+                style: "text-align: center; font-size: 14px;line-height:50px"
+            }}
+        ],
+        dataSource: {
+            transport:{
+                read:{
+                    dataType:"json",
+                    url:"/pj/api/oceanEngin/getOceanEnginData"
+                }
+            },
+            pageSize:6
+        },
+        groupable: true,
+        sortable: true,
+        pageable: {
+            refresh: true,
+            pageSizes: true,
+            buttonCount: 5
+        },
+        height: 600,
+        editable: "popup",
+
+    });
+
+
+    kendo.culture("zh-CN");
+
+    enginWnd = $("#enginWnd").kendoWindow({
+        title: "海洋工程",
+        modal: true,
+        visible: false,
+        resizable: false,
+        width: 630,
+        height:350
+    }).data("kendoWindow");
+
+
+    function addEngin(){
+        $("#title").val("");
+        $("#introduction").val("");
+        enginRecordId=0;//添加证书模板，模板id设为0.
+        enginWnd.center().open();
+    }
+
+    //查看弹窗
+    function showEngin(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        enginRecordId=dataItem.id;
+        $("#title").val(dataItem.title);
+        $("#introduction").val(dataItem.introduction);
+        enginWnd.center().open();
+    }
+
+    //删除
+    function delEngin(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        enginRecordId=dataItem.id;
+        var enginData={id:enginRecordId};
+
+
+
+        $.ajax({
+            url:"/pj/api/oceanEngin/delOceanEnginData/"+enginRecordId,
+            dataType:"json",
+            type:"POST",
+            data:enginData,
+            success:function (data) {
+                location.reload();
+            }
+        })
+
+
+
+    }
+    //保存
+    function submitEngin() {
+        var title=$("#title").val();
+        var introduction=$("#introduction").val();
+        var enginData={
+            id:enginRecordId,
+            title:title,
+            introduction:introduction
+        };
+        $.ajax({
+            url:"/pj/api/oceanEngin/addOceanEnginData",
+            dataType:"json",
+            type:"POST",
+            data:enginData,
+            success:function (data) {
+                $("#enginWnd").data("kendoWindow").close();
+                location.reload();
+            }
+        })
+    }
+    $("#closeEngin").click( function (e) {
+        $("#enginWnd").data("kendoWindow").close();
+    });
+
+
+
+    //weixinyu
+    kendo.culture("zh-CN");
+    $("#lawGrid").kendoGrid({
+        toolbar: [
+            {
+                template: '<a class="k-button" href="\\#" onclick="return addLaw()">添加</a>'
+            }
+        ],
+        columns: [
+            { field: "title",title:"标题",width:"20%",attributes: {
+                "class": "table-cell",
+                style: "text-align: left; font-size: 14px;line-height:50px;overflow: hidden;\n" +
+                "text-overflow:ellipsis;\n" +
+                "white-space: nowrap;"
+            }},
+            { field: "introduction",title:"简介",attributes: {
+                "class": "table-cell",
+                style: "text-align: center; font-size: 14px;line-height:50px;overflow: hidden;\n" +
+                "text-overflow:ellipsis;\n" +
+                "white-space: nowrap;"
+            }},
+            { command:[{text:"编辑",click:showLaw},{text:"删除",click:delLaw}],width:"20%",attributes: {
+                "class": "table-cell",
+                style: "text-align: center; font-size: 14px;line-height:50px"
+            }}
+        ],
+        dataSource: {
+            transport:{
+                read:{
+                    dataType:"json",
+                    url:"/pj/api/oceanLaw/getOceanLawData"
+                }
+            },
+            pageSize:6
+        },
+        groupable: true,
+        sortable: true,
+        pageable: {
+            refresh: true,
+            pageSizes: true,
+            buttonCount: 5
+        },
+        height:600,
+        editable: "popup",
+
+    });
+
+    //weixinyu
+    kendo.culture("zh-CN");
+
+    lawWnd = $("#lawWnd").kendoWindow({
+        title: "海洋法律",
+        modal: true,
+        visible: false,
+        resizable: false,
+        width: 630,
+        height:350
+    }).data("kendoWindow");
+
+
+    function addLaw(){
+        $("#title").val("");
+        $("#introduction").val("");
+        lawRecordId=0;//添加证书模板，模板id设为0.
+        lawWnd.center().open();
+    }
+
+    //查看弹窗
+    function showLaw(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        lawRecordId=dataItem.id;
+        $("#titleLaw").val(dataItem.title);
+        $("#introductionLaw").val(dataItem.introduction);
+        lawWnd.center().open();
+    }
+
+    //删除
+    function delLaw(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        lawRecordId=dataItem.id;
+        var lawData={id:lawRecordId};
+
+
+
+        $.ajax({
+            url:"/pj/api/oceanLaw/delOceanLawData/"+lawRecordId,
+            dataType:"json",
+            type:"POST",
+            data:lawData,
+            success:function (data) {
+                location.reload();
+            }
+        })
+
+
+
+    }
+    //保存
+    function submitLaw() {
+        var title=$("#title").val();
+        var introduction=$("#introduction").val();
+        var lawData={
+            id:lawRecordId,
+            title:title,
+            introduction:introduction
+        };
+        $.ajax({
+            url:"/pj/api/oceanLaw/addOceanLawData",
+            dataType:"json",
+            type:"POST",
+            data:lawData,
+            success:function (data) {
+                $("#lawWnd").data("kendoWindow").close();
+                location.reload();
+            }
+        })
+    }
+    $("#closeLaw").click( function (e) {
+        $("#lawWnd").data("kendoWindow").close();
+    });
+
+    //end
+
+
+    //海洋调查
+    // By wuxinyi
+
+    kendo.culture("zh-CN");
+    $("#surveyGrid").kendoGrid({
+        toolbar: [
+            {
+                template: '<a class="k-button" href="\\#" onclick="return addSurvey()">添加</a>'
+            }
+        ],
+        columns: [
+//            { field: "id",
+//            attributes: {
+//            "class": "table-cell",
+//            style: "text-align: center; font-size: 14px;line-height:50px"
+//            }},
+            { field: "title",title:"标题",width:"20%",attributes: {
+                "class": "table-cell",
+                style: "text-align: left; font-size: 14px;line-height:50px;overflow: hidden;\n" +
+                "text-overflow:ellipsis;\n" +
+                "white-space: nowrap;"
+            }},
+            { field: "introduction",title:"简介",attributes: {
+                "class": "table-cell",
+                style: "text-align: center; font-size: 14px;line-height:50px;overflow: hidden;\n" +
+                "text-overflow:ellipsis;\n" +
+                "white-space: nowrap;"
+            }},
+            { command:[{text:"编辑",click:showSurvey},{text:"删除",click:delSurvey}],width:"20%",attributes: {
+                "class": "table-cell",
+                style: "text-align: center; font-size: 14px;line-height:50px"
+            }}
+        ],
+        dataSource: {
+            transport:{
+                read:{
+                    dataType:"json",
+                    url:"/pj/api/oceanSurvey/getOceanSurveyData"
+                }
+            },
+            pageSize:12
+        },
+        groupable: true,
+        sortable: true,
+        pageable: {
+            refresh: true,
+            pageSizes: true,
+            buttonCount: 5
+        },
+        height: 800,
+        editable: "popup",
+
+    });
+
+
+    kendo.culture("zh-CN");
+
+    surveyWnd = $("#surveyWnd").kendoWindow({
+        title: "海洋调查",
+        modal: true,
+        visible: false,
+        resizable: false,
+        width: 630,
+        height:350
+    }).data("kendoWindow");
+
+
+    function addSurvey(){
+        $("#title").val("");
+        $("#introduction").val("");
+        surveyRecordId=0;//添加证书模板，模板id设为0.
+        surveyWnd.center().open();
+    }
+
+    //查看弹窗
+    function showSurvey(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        surveyRecordId=dataItem.id;
+        $("#titlesurvey").val(dataItem.title);
+        $("#introductionsurvey").val(dataItem.introduction);
+        surveyWnd.center().open();
+    }
+
+    //删除
+    function delSurvey(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        surveyRecordId=dataItem.id;
+        var surveyData={id:surveyRecordId};
+
+
+
+        $.ajax({
+            url:"/pj/api/oceanSurvey/delOceanSurveyData/"+surveyRecordId,
+            dataType:"json",
+            type:"POST",
+            data:surveyData,
+            success:function (data) {
+                location.reload();
+            }
+        })
+
+
+
+    }
+    //保存
+    function submitSurvey() {
+        var title=$("#title").val();
+        var introduction=$("#introduction").val();
+        var surveyData={
+            id:surveyRecordId,
+            title:title,
+            introduction:introduction
+        };
+        $.ajax({
+            url:"/pj/api/oceanSurvey/addOceanSurveyData",
+            dataType:"json",
+            type:"POST",
+            data:surveyData,
+            success:function (data) {
+                $("#surveyWnd").data("kendoWindow").close();
+                location.reload();
+            }
+        })
+    }
+    $("#closeSurvey").click( function (e) {
+        $("#surveyWnd").data("kendoWindow").close();
+    });
+
+
+    //
+
+
+
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $('.content').prependTo('mapDiv');
+        $( '.dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').slideDown(200);
+            },
+            function(){
+                $(this).children('.sub-menu').slideUp(200);
+            }
+        );
+    }); // end ready
+    $(function(){
+        initDynamicChart();
+    })
+</script>
+</body>
+</html>

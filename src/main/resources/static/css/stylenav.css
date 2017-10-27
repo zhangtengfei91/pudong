@@ -1,0 +1,92 @@
+
+#wrapper {
+    min-width:1000px;
+}
+nav {
+
+    padding:10px 0;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+/* sub navigation */
+nav li ul {
+    zIndex:9999;
+
+    background-color:#f9f9f9;
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:112px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:112px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#FFFFFF;
+    text-decoration:none;
+    display:block;
+}
+.sub-menu a{
+    color: #000;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    /*color:rgb(50,50,50);*/
+
+}
+nav li:hover,
+nav li:focus,
+nav li:active{
+    background: #a4b0b9;
+}
+/* style sub level links */
+nav li li a {
+    /*border-bottom:solid 1px rgb(200,50,50);50*/
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    width:88px;
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}

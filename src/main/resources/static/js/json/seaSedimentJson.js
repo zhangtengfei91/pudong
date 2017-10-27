@@ -1,0 +1,17 @@
+[
+{"id":"dataOxygen1","name":"氧化还原电位"},
+{"id":"dataPH1","name":"PH值"},
+{"id":"dataGranu","name":"粒度"},
+{"id":"dataOrgan","name":"有机碳"},
+{"id":"dataVulcani","name":"硫化物"},
+{"id":"dataPetro1","name":"石油类铜"},
+{"id":"dataTypograp1","name":"铅"},
+{"id":"dataZn1","name":"锌"},
+{"id":"dataChrome","name":"铬"},
+{"id":"dataMercury1","name":"汞"},
+{"id":"dataArsenic1","name":"砷"},
+{"id":"dataSfin","name":"六六六"},
+{"id":"dataTick","name":"滴滴涕"},
+{"id":"dataTotal","name":"总多氯联苯"},
+{"id":"dataCadmium1","name":"镉"}
+]

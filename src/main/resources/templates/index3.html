@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>新区海洋综合管理信息服务系统</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="icon" href="/img/logoPre.ico">
+
+    <script src="/js/jquery.min.js"></script>
+
+
+    <script src="/js/pj/three.js"></script>
+    <script src="/js/pj/initScript.js"></script>
+    <script src="/js/pj/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/js/arcgis_js_api/library/3.21/3.21/esri/css/esri.css" />
+    <script src="/js/pj/initScript.js"></script>
+
+    <script src="/js/arcgis_js_api/library/3.21/3.21/init.js"></script>
+    <link rel="icon" href="/img/logoPre.ico">
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/kendo.all.min.js"></script>
+
+    <link rel="stylesheet" href="/js/kendo.rtl.min.css"/>
+    <link rel="stylesheet" href="/js/kendo.silver.min.css"/>
+    <link rel="stylesheet" href="/js/kendo.common.min.css"/>
+
+</head>
+<style>
+
+</style>
+<body>
+<div>
+    <!-- header -->
+    <div>
+        <!-- header -->
+        <div class="topTitle">
+            <div class="logo">
+                <img class="logo-img" src="/img/logoPre.png" alt="logo">
+                <span class="logo-word">浦东新区海洋综合管理信息服务系统</span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="navList"><a href="/index">首页</a></li>
+                    <li class="navList"><a href="/front" target="_blank">法律法规</a></li>
+                    <li class="navList"><a href="/pj/seaSurvaillance" target="_blank">视频监管</a></li>
+                    <li class="navList"><a href="/pj/videoSurvaillance" target="_blank">海洋经济</a></li>
+                    <li class="navList"><a href="/pj/newsList" target="_blank">海域管理</a></li>
+                    <li class="navList"><a href="/pj/newsList" target="_blank">海洋环境</a></li>
+                    <li class="navList"><a href="/pj/newsList" target="_blank">防灾减灾</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+        <div class="center">
+            <div class="content-top">
+                <div class="content-special">
+                    <div class="spacial-img">
+                        <img src="/img/dataImg1.png" alt="">
+                    </div>
+                    <a href="/pj/oceanEngin/1/all" target="_blank" class="spacial-name">海洋工程应用</a>
+
+                </div>
+
+                <div class="content-special">
+                    <div class="spacial-img">
+                        <img src="/img/dataImg2.png" alt="">
+                    </div>
+                    <a href="/pj/oceanLaw/1" target="_blank" class="spacial-name">海洋法律法规</a>
+
+                </div>
+
+                <div class="content-special">
+                    <div class="spacial-img">
+                        <img src="/img/dataImg3.png" alt="">
+                    </div>
+                    <a href="/pj/oceanResour/1" target="_blank" class="spacial-name">海洋生态资源</a>
+
+                </div>
+
+                <div class="content-special">
+                    <div class="spacial-img">
+                        <img src="/img/dataImg4.png" alt="">
+                    </div>
+                    <a href="/pj/oceanSurvey/1" target="_blank" class="spacial-name">海洋资源调查</a>
+
+                </div>
+            </div>
+            <div class="content-leftAndRight" style="background: #ffffff;margin-top: 30px">
+                <div class="content-right" style="height: 472px;top: 381px;overflow: hidden">
+                    <div id="mapDiv">
+
+                    </div>
+                </div>
+                <div class="content-left">
+                    <div class="content-box">
+                        <a id="seaSurVailBtn" href="/pj/seaSurvaillance" target="_blank" title="图片1">
+                            <img src="/img/boxImg1.gif" alt="" class="content-box item">
+                            <div class="content-word">海水环境监测</div>
+                        </a>
+                    </div>
+
+                    <div class="content-box">
+                        <a href="/pj/seaSediment" title="图片2"><img src="/img/boxImg2.gif" alt="" class="content-box item">
+                            <div class="content-word">海洋沉积物监测</div>
+                        </a>
+
+                    </div>
+
+                    <div class="content-box">
+                        <a href="/pj/seaBioCondi" title="图片3"><img src="/img/boxImg3.gif" alt="" class="content-box item">
+                            <div class="content-word">海洋生物状况监测</div></a>
+                    </div>
+
+                    <div class="content-box">
+                        <a href="/pj/sewageOutfall" title="图片4">
+                            <img src="/img/boxImg4.gif" alt="" class="content-box item">
+                            <div class="content-word">排污口环境监测</div></a>
+                        </a>
+                    </div>
+
+                    <div class="content-box">
+                        <a href="/pj/seawaterIntrusion" title="图片5">
+                            <img src="/img/boxImg5.gif" alt="" class="content-box item">
+                            <div class="content-word">海水入侵环境监测</div></a>
+                        </a>
+                    </div>
+
+                    <div class="content-box">
+                        <a href="/pj/seaEnvirMoniWarn" title="图片6">
+                            <img src="/img/boxImg6.gif" alt="" class="content-box item">
+                            <div class="content-word">海洋环境监测与预警</div></a>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- footer -->
+        <div style="background: #343844">
+            <div style="color:#ffffff;position: relative;height: 45px;display: flex;justify-content: center;align-content: center">@版权所有：上海海洋大学、浦东新区海洋局</div>
+        </div>
+    </div>
+    <script>
+
+        //设置body的高度
+        var mainHeight= document.body.clientHeight -140;
+        $(".main").css("height","110%");
+        $(document).ready(function(){
+
+            //菜单点击后 出现背景颜色 首页默认出现背景颜色
+            var navList=document.getElementsByClassName("navList");
+            for(let i=0;i<navList.length;i++){
+                navList[i].onclick = function(){
+                    this.style.backgroundColor = "red";
+                    for (var i = 0; i < $(this).siblings().length; i++) {
+                        $(this).siblings().css("background","");
+                    }
+                }
+
+            }
+        })
+        $(document).ready(function(){
+            $(".content a").mouseover(function () {
+                this.style.backgroundColor="#C0C0C0";
+                this.style.cursor="auto";
+            });
+            $(".content a").mouseout(function(){
+                this.style.backgroundColor="";
+            });
+        });
+        (function(){
+            //$("#mapDiv_zoom_slider")[0].style.display="None";
+        })()
+
+
+
+    </script>
+</body>
+</html>

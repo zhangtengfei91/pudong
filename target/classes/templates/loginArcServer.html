@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>新区海洋综合管理信息服务系统</title>
+    <link rel="stylesheet" href="/css/common2.css">
+    <link rel="icon" href="/img/logoPre.ico">
+    <link rel="stylesheet" href="/css/sui/bootstrap3.3.4.css">
+    <link rel="stylesheet" type="text/css" href="/css/sui/sui.nav.css" />
+    <link rel="stylesheet" href="/css/kendo/kendo.common.min.css">
+    <link rel="stylesheet" href="/css/kendo/kendo.bootstrap.min.css">
+    <link rel="stylesheet" href="/js/arcgis_js_api/library/3.21/3.21/esri/css/esri.css">
+    <link rel="stylesheet" href="/css/kendo.default.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/stylenav.css">
+    <link rel="stylesheet" href="/css/sixModel.css">
+    <script src="/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div>
+    <!-- header -->
+    <div>
+        <!-- header -->
+        <div class="topTitle">
+            <div class="logo">
+                <img class="logo-img" src="/img/logoPre.png" alt="logo">
+                <span class="logo-word">浦东新区海洋综合管理信息系统</span>
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul class="content clearfix">
+                        <li><a href="/index" class="head">首页</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="head">关于我们</a>
+                            <ul class="sub-menu">
+                                <li><a href="">单位介绍</a></li>
+                                <li><a href="">海洋状况</a></li>
+                                <li><a href="">主要职能</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="head">政策法规</a>
+                            <ul class="sub-menu">
+
+                                <li class="dropdown">
+                                    <a href="">海洋规划 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="" >国家规划</a></li>
+                                        <li><a href="">上海规划</a></li>
+                                        <li><a href="">新区规划</a></li>
+                                        <li><a href="">其他</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="">政策法规 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">国家法规</a></li>
+                                        <li><a href="">上海法规</a></li>
+                                        <li><a href="/pj/oceanLaw" target="_blank">新区法规</a></li>
+                                        <li><a href="">其他</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="" class="head">海洋经济</a>
+                            <ul class="sub-menu">
+                                <li><a href="">总体情况</a></li>
+
+                                <li class="dropdown">
+                                    <a href="">重点领域 ></a>
+                                    <ul class="sub-menu">
+                                        <li class="dropdown">
+                                            <a href="">产业 ></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="">海工装备</a></li>
+                                                <li><a href="">船舶</a></li>
+                                                <li><a href="">海洋信息</a></li>
+                                                <li><a href="">海洋生物</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="">滨河 ></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="">渔业</a></li>
+                                                <li><a href="">能源</a></li>
+                                                <li><a href="">其他</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">岸线</a></li>
+                                        <li><a href="">旅游</a></li>
+                                        <li><a href="">其他</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="">重点区域 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">产业基地</a></li>
+                                        <li><a href="">海洋创新园</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">其他</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="head">海洋管理</a>
+                            <ul class="sub-menu">
+                                <li><a href="" target="_blank">用海管理</a></li>
+                                <li><a href="" target="_blank">海洋环保 </a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="head">海洋环境 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/pj/seaSurvaillance" target="_blank">海水环境</a></li>
+                                        <li><a href="/pj/seaBioCondi" target="_blank">海洋生物</a></li>
+                                        <li><a href="/pj/sewageOutfall" target="_blank">排污口</a></li>
+                                        <li><a href="/pj/seaSediment" target="_blank">沉积物</a></li>
+                                        <li><a href="/pj/seaBioCondi" target="_blank">环境预警</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="head">防灾减灾 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/front" target="_blank">风暴潮</a></li>
+                                        <li><a href="/pj/seawaterIntrusion" target="_blank">海水入侵</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a  class="head">视频监管</a>
+                            <ul class="sub-menu">
+                                <li><a href="/pj/videoSurvaillance" target="_blank">固定监管</a></li>
+                                <li><a href="/pj/vehicleVideos" target="_blank">移动监管</a></li>
+                                <li><a href="#">三维展示</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a  class="head">后台管理</a>
+                            <ul class="sub-menu">
+                                <li><a href="/pj/dataConfigure" target="_blank">数据管理</a></li>
+                                <li><a href="/pj/loginArcServer" target="_blank">服务交换</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div style="height: calc(100vh - 125px);">
+        <iframe src="http://172.3.11.34:6080/arcgis/manager" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%;height: 100%">
+            <p>您的浏览器不支持  iframe 标签。</p>
+        </iframe>
+    </div>
+    <!--footer-->
+    <!--<div style="background: #343844;width: 100%;">
+        <div style="color:#ffffff;height: 45px;display: flex;justify-content: center;align-items: center;">@版权所有：浦东新区科经委（海洋处）</div>
+    </div>-->
+    <div class="footer" style="background: #20326b">
+        <div style="color:#ffffff;position: relative;height: 45px;display: flex;justify-content: center;align-items: center">@版权所有：浦东新区科经委(海洋处)</div>
+    </div>
+</div>
+<script src="/js/angular.min.js"></script>
+<script src="/js/kendo/kendo.all.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<!--arcgis相关引用-->
+<script src="/js/arcgis_js_api/library/3.21/3.21/init.js"></script>
+<!--常用方法-->
+<script src="/js/pj/commonFun.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.content').prependTo('mapDiv');
+        $( '.dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').slideDown(200);
+            },
+            function(){
+                $(this).children('.sub-menu').slideUp(200);
+            }
+        );
+    }); // end ready
+
+</script>
+</body>
+</html>

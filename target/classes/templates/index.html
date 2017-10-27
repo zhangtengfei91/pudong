@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>浦东新区海洋综合管理信息系统</title>
+    <link rel="stylesheet" href="/css/common2.css">
+    <link rel="icon" href="/img/logoPre.ico">
+
+    <script src="/js/jquery.min.js"></script>
+
+
+    <script src="/js/pj/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/js/arcgis_js_api/library/3.21/3.21/esri/css/esri.css" />
+    <script src="/js/pj/initScript.js"></script>
+
+    <script src="/js/arcgis_js_api/library/3.21/3.21/init.js"></script>
+    <link rel="icon" href="/img/logoPre.ico">
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/kendo.all.min.js"></script>
+
+    <link rel="stylesheet" href="/js/kendo.rtl.min.css"/>
+    <link rel="stylesheet" href="/js/kendo.silver.min.css"/>
+    <link rel="stylesheet" href="/js/kendo.common.min.css"/>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/stylenav.css">
+
+
+
+
+    <script src="/js/pj/highChart/highcharts.js"></script>
+
+    <script src="/js/pj/highChart/highcharts-zh_CN.js"></script>
+    <script src="/js/drawDynamicLine.js"></script>
+
+</head>
+<style>
+    .footer{
+           bottom: 0px;
+           position: fixed;
+           width: 100%;
+       }
+    .main{
+        height: calc(100vh - 125px);
+    }
+</style>
+<body>
+<div >
+    <!-- header -->
+    <div>
+        <!-- header -->
+        <div class="topTitle">
+            <div class="logo">
+                <img class="logo-img" src="/img/logoPre.png" alt="logo">
+                <span class="logo-word">浦东新区海洋综合管理信息系统</span>
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul class="content clearfix">
+                        <li><a href="/index" class="head">首页</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="head">关于我们</a>
+                            <ul class="sub-menu">
+                                <li><a href="">单位介绍</a></li>
+                                <li><a href="">海洋状况</a></li>
+                                <li><a href="">主要职能</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="head">政策法规</a>
+                            <ul class="sub-menu">
+
+                                <li class="dropdown">
+                                    <a href="">海洋规划 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="" >国家规划</a></li>
+                                        <li><a href="">上海规划</a></li>
+                                        <li><a href="">新区规划</a></li>
+                                        <li><a href="">其他</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="">政策法规 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">国家法规</a></li>
+                                        <li><a href="">上海法规</a></li>
+                                        <li><a href="/pj/oceanEngin/1/all" target="_blank">新区法规</a></li>
+                                        <li><a href="">其他</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="" class="head">海洋经济</a>
+                            <ul class="sub-menu">
+                                <li><a href="">总体情况</a></li>
+
+                                <li class="dropdown">
+                                    <a href="">重点领域 ></a>
+                                    <ul class="sub-menu">
+                                        <li class="dropdown">
+                                            <a href="">产业 ></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="">海工装备</a></li>
+                                                <li><a href="">船舶</a></li>
+                                                <li><a href="">海洋信息</a></li>
+                                                <li><a href="">海洋生物</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="">滨河 ></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="">渔业</a></li>
+                                                <li><a href="">能源</a></li>
+                                                <li><a href="">其他</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">岸线</a></li>
+                                        <li><a href="">旅游</a></li>
+                                        <li><a href="">其他</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="">重点区域 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">产业基地</a></li>
+                                        <li><a href="">海洋创新园</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">其他</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="head">海洋管理</a>
+                            <ul class="sub-menu">
+                                <li><a href="/front" target="_blank">用海管理</a></li>
+                                <li><a href="" target="_blank">海洋环保 </a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="head">海洋环境 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/pj/seaSurvaillance" target="_blank">海水环境</a></li>
+                                        <li><a href="/pj/seaBioCondi" target="_blank">海洋生物</a></li>
+                                        <li><a href="/pj/sewageOutfall" target="_blank">排污口</a></li>
+                                        <li><a href="/pj/seaSediment" target="_blank">沉积物</a></li>
+                                        <li><a href="/pj/seaBioCondi" target="_blank">环境预警</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="head">防灾减灾 ></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/front" target="_blank">风暴潮</a></li>
+                                        <li><a href="/pj/seawaterIntrusion" target="_blank">海水入侵</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a  class="head">视频监管</a>
+                            <ul class="sub-menu">
+                                <li><a href="/pj/videoSurvaillance" target="_blank">固定监管</a></li>
+                                <li><a href="/pj/vehicleVideos" target="_blank">移动监管</a></li>
+                                <li><a href="#">三维展示</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a  class="head">后台管理</a>
+                            <ul class="sub-menu">
+                                <li><a href="/pj/dataConfigure" target="_blank">数据管理</a></li>
+                                <li><a href="/pj/loginArcServer" target="_blank">服务交换</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+        <div class="center">
+            <div class="contentMap">
+                <div style="height: calc(100vh - 125px);
+                                width: 21%;
+                                background-color: white;
+                                color: #154BA0;
+                                filter: Alpha(Opacity=10, Style=0);
+                                opacity: 0.9;
+                                position: fixed;
+                                left: 0;
+                                z-index: 20;">
+                    <div class="left" style=" z-index:30;padding: 5px;height: 100%">
+                        <div style="width: 100%;height: 45%;">
+                            <!--&lt;!&ndash;上面的两个div块><!>-->
+                            <div style="width: 100%;height:45%;display: flex;align-items: center;justify-content: center">
+                                <div style="background: rgba(0, 200, 255, 0.3);width: 46%;min-height: 100px;padding: 2%;display: flex;align-items: center;justify-content: center">
+                                    <div style="width: 40%;float: left;">
+                                        <img style="width: 40px;height: 40px;margin: 5px auto" src="/img/大风.svg">
+                                        <h1 style="font-size: 12px">大风</h1>
+                                    </div>
+
+                                    <div style="width: 60%;float: right;display: flex;align-items: center;justify-content: center">
+                                        <div>
+                                            <h1 style="font-size: 13px">5级</h1>
+                                            <span style="font-size: 10px;color: #6d7894">实时海域风浪等级弱,较合适适宜</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div style="background: rgba(0, 200, 255, 0.3);width: 46%;min-height: 100px;margin: 6px;display: flex">
+                                    <div style="width: 40%;float: left;padding: 5%">
+                                        <img style="width: 40px;height: 40px;margin: 5px auto" src="/img/风浪.svg">
+                                        <h1 style="font-size: 12px">风浪</h1>
+                                    </div>
+
+                                    <div style="width: 60%;float: right;display: flex;align-items: center;justify-content: center;">
+                                        <div>
+                                            <h1 style="font-size: 13px">弱</h1>
+                                            <span style="font-size: 10px;color: #6d7894">浦东海域实时浪高0.5m</span>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--下面的两个div块-->
+                            <div style="width: 100%;height:45%;display: flex;align-items: center;justify-content: center">
+                                <div style="background: rgba(0, 200, 255, 0.3);width: 46%;height: 100px;display: flex;align-items: center;justify-content: center">
+                                    <div style="width: 40%;float: left;">
+                                        <img style="width: 40px;height: 40px;margin: 5px auto" src="/img/温度计.svg">
+                                        <h1 style="font-size: 12px;text-align: center">温度</h1>
+                                    </div>
+
+                                    <div style="width: 60%;float: right;display: flex;align-items: center;justify-content: center">
+                                        <div>
+                                            <h1 style="font-size: 13px;">24℃</h1>
+                                            <span style="font-size: 10px;color: #6d7894">实时海域风浪等级弱,较合适适宜</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div style="background: rgba(0, 200, 255, 0.3);width: 46%;height: 100px;margin: 6px;display: flex">
+                                    <div style="width: 40%;float: left;">
+                                        <img style="width: 40px;height: 40px;margin: 5px auto" src="/img/空气质量.svg">
+                                        <h1 style="font-size: 12px;text-align: center">PM2.5</h1>
+                                    </div>
+
+                                    <div style="width: 60%;float: right;display: flex;align-items: center;justify-content: center">
+                                        <div>
+                                            <h1 style="font-size: 13px;">64</h1>
+                                            <span style="font-size: 10px;color: #6d7894">空气质量良好,较合适适宜</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style=" z-index:30;height: 55%;width:100%;">
+                            <h1 style="text-align:center;color: #333333;font-size: 18px;line-height: 26px;fill: #333333;">无人机视频</h1>
+                            <video controls="controls" autoplay="autoplay" style="margin:6px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: flex;justify-content: center;width: 90%;" loop="loop" src="/img/video/2.mp4">
+                            </video>
+                            <p style="font-family:'微软雅黑';height:45%;line-height:25px;text-indent: 2em;font-size:16px;color: #2f364a;padding: 15px;display:-webkit-box;
+                                        -webkit-box-orient:vertical;
+                                        -webkit-line-clamp:5;
+                                        overflow:hidden;">浦东新区海洋拥有优越的地理位置、便于港口交通发展的宝贵的水域空间资源、
+                                不断淤涨的江海滩涂资源、得天独厚的旅游资源；海洋自然资源种类齐全。</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="mapDiv"></div>
+                <div style="height: calc(100vh - 125px);
+                                        width: 21%;
+                                        background-color: white;
+                                        color: #154BA0;
+                                        filter: Alpha(Opacity=10, Style=0);
+                                        opacity: 0.9;
+                                        position: fixed;
+                                        right: 0;
+                                        z-index: 20;">
+
+                    <div style=" z-index:30;padding: 5px;height: 45%;margin-right: 5px">
+                        <div id="container" style="width:285px;height:300px;margin-right: 5px"></div>
+                    </div>
+
+                    <div style=" z-index:30;padding: 5px;height: 55%;">
+                        <div style="padding: 10px">
+                            <h1 style="text-align:center;color: #333333;font-size: 18px;fill: #333333;">水域风、浪、流实时监测</h1>
+                            <video autoplay="autoplay" loop="loop"  style="margin-left:2%;padding: 5px;display: flex;justify-content: center;width:100%;" src="/img/video/wind.mp4">
+                            </video>
+                            <p style="font-family:'微软雅黑';height:45%;line-height:25px;text-indent: 2em;font-size:16px;color: #2f364a;padding: 15px;display:-webkit-box;
+                                -webkit-box-orient:vertical;
+                                -webkit-line-clamp:5;
+                                overflow:hidden;">东海海域面积约77万平方公里，东海大陆架平均水深为72米，
+                                全海域平均水深达349米，最深处接近冲绳岛西侧（中琉界沟），约为2700米。</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer" style="background: #20326b">
+        <div style="color:#ffffff;position: relative;height: 45px;display: flex;justify-content: center;align-items: center">@版权所有：浦东新区科经委(海洋处)</div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('.content').prependTo('mapDiv');
+        $( '.dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').slideDown(200);
+            },
+            function(){
+                $(this).children('.sub-menu').slideUp(200);
+            }
+        );
+    }); // end ready
+    $(function(){
+        initDynamicChart();
+    })
+</script>
+</body>
+</html>

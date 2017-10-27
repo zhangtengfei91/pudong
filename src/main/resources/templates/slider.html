@@ -1,0 +1,189 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<body th:fragment="slidermenu(activeitem)">
+<div class="sidebar" id="sidebar">
+    <script type="text/javascript">
+        try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+    </script>
+
+    <!--<div class="sidebar-shortcuts" id="sidebar-shortcuts">-->
+        <!--<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">-->
+            <!--<button class="btn btn-success" title="我的流程">-->
+                <!--<i class="icon-list"></i>-->
+            <!--</button>-->
+
+            <!--<button class="btn btn-info">-->
+                <!--<i class="icon-pencil"></i>-->
+            <!--</button>-->
+
+            <!--<button class="btn btn-warning">-->
+                <!--<i class="icon-group"></i>-->
+            <!--</button>-->
+
+            <!--<button class="btn btn-danger">-->
+                <!--<i class="icon-cogs"></i>-->
+            <!--</button>-->
+        <!--</div>-->
+
+        <!--<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">-->
+            <!--<span class="btn btn-success"></span>-->
+
+            <!--<span class="btn btn-info"></span>-->
+
+            <!--<span class="btn btn-warning"></span>-->
+
+            <!--<span class="btn btn-danger"></span>-->
+        <!--</div>-->
+    <!--</div>&lt;!&ndash; #sidebar-shortcuts &ndash;&gt;-->
+
+    <ul class="nav nav-list">
+        <li th:class="${activeitem=='kzt'}?'active'">
+            <a href="/front/">
+                <i class="icon-home"></i>
+                <span class="menu-text"> 首页 </span>
+            </a>
+        </li>
+        <li th:class="${activeitem=='dbzx'}?'active'">
+            <a href="#" class="dropdown-toggle">
+                <i class="icon-flag"></i>
+                <span class="menu-text"> 海域动态监视监测 </span>
+                <b class="arrow icon-angle-down"></b>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="javascript:void(0);" id="marginEnviMontor">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海域环境监测
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" id="drainOutletMontor">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        陆源入海排污监控
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" id="coastlineInvest">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海岸线调查
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" id="seaResourceInvest">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海域资源调查
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" id="beachWetlandInvest">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        滩涂湿地调查
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海水入侵监测
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海水质量控制
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海洋灾害预警
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </li>
+        <li th:class="${activeitem=='dbzx'}?'active'">
+            <a href="#" class="dropdown-toggle">
+                <i class="icon-flag"></i>
+                <span class="menu-text"> 海洋预报数值服务 </span>
+                <b class="arrow icon-angle-down"></b>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="javascript:void(0);" id="aRoute">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        航线预报
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" id="aStation">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        站点预报
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+        <li th:class="${activeitem=='dbzx'}?'active'">
+            <a href="#" class="dropdown-toggle">
+                <i class="icon-flag"></i>
+                <span class="menu-text"> 海洋信息基础平台 </span>
+                <b class="arrow icon-angle-down"></b>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海洋数据采集服务
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海洋数据交换管理
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="icon-double-angle-right"></i>
+                        <i class="icon-book"></i>
+                        海洋数据处理工具
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul><!-- /.nav-list -->
+
+    <div class="sidebar-collapse" id="sidebar-collapse">
+        <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+    </div>
+
+    <script type="text/javascript">
+        try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+    </script>
+</div>
+
+</body>
+
+</html>

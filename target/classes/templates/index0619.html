@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title th:text="${title}"></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script th:replace="header :: header"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <script type="text/javascript" src="http://localhost:8080/arcgis_js_api/library/3.14/3.14/init.js"></script>
+    <link  rel="stylesheet"  type="text/css" href="http://localhost:8080/arcgis_js_api/library/3.14/3.14/esri/css/esri.css" />
+</head>
+<style>
+
+    #homeButton{
+        position: absolute;
+        z-index: 30;
+        left: 15px;
+        top:100px;
+    }
+
+</style>
+<body>
+
+<div th:replace="navbar :: navbar(${user})"></div>
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <div th:replace="slider :: slidermenu(${'xtsz'})"></div>
+        <div class="main-content">
+
+            <!--<div id="ui-map-view" class="map">-->
+                <!--<div id="homeButton"></div>-->
+            <!--</div>-->
+            <div id="mapDiv" style="overflow:hidden;width:100% ;height:700px; border:1px solid #000;"></div>
+
+        </div><!-- /.main-content -->
+
+
+    </div><!-- /.main-container-inner -->
+
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+
+<script src="/assets/js/jquery-2.0.3.min.js"></script>
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="/assets/js/jquery.1.10.2.min.js"></script>
+<![endif]-->
+
+<!--[if !IE]> -->
+
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+</script>
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+    if("ontouchend" in document) document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+</script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/typeahead-bs2.min.js"></script>
+
+<!-- page specific plugin scripts -->
+
+<!-- ace scripts -->
+
+<script src="/assets/js/ace-elements.min.js"></script>
+<script src="/assets/js/ace.min.js"></script>
+<script src="/js/kendo.all.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
+<!--<script src="/assets/js/arcgis_js_api/library/3.14/3.14/init.js"></script>-->
+
+<!--<link rel="stylesheet" href="http://localhost:8080/arcgis_js_api_40/library/4.0/4.0/dijit/themes/claro/claro.css" />
+<link rel="stylesheet" href="http://localhost:8080/arcgis_js_api_40/library/4.0/4.0/esri/css/main.css" />
+<script src="http://localhost:8080/arcgis_js_api_40/library/4.0/4.0/init.js"></script>-->
+
+
+
+<!--主函数-->
+<script src="/js/pj/main.js"></script>
+<!--加载地图-->
+<script src="/js/pj/initScript.js"></script>
+<!--常用函数-->
+<script src="/js/pj/commonFun.js"></script>
+<!--航线预报-->
+<script src="/js/pj/routePredict.js"></script>
+<!--站点预报-->
+<script src="/js/pj/stationPredict.js"></script>
+<!--海域监测环境-->
+<script src="/js/pj/marinEnviMonitor.js"></script>
+<!--陆源排污口-->
+<script src="/js/pj/drainOutlet.js"></script>
+
+<!-- inline scripts related to this page -->
+</body>
+</html>

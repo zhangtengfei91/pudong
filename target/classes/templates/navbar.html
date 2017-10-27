@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body th:fragment="navbar(user)">
+
+<div class="navbar navbar-default" id="navbar">
+<script type="text/javascript">
+    try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+</script>
+<style type="text/css">
+    input{
+    border-radius: 25px;/*设置输入框两边的边框半径，可以使两边变成弧形*/
+    width: 200px;/*设置输入框宽度*/
+    outline: none;/*当鼠标点击输入框后“边框不会变蓝”*/
+    background-image:url(/img/search.png);/*给输入框里面加一个搜索按钮的图标*/
+    background-repeat: no-repeat;/*如果不设置这项，图标会不断重复出现*/
+    background-size: 21px 21px;     /*设置图标的大小*/
+    background-position: 95%;       /*对图标的位置进行定位*/
+    margin-left: 20px;
+    margin-top: 10px;
+    }
+</style>
+<div class="navbar-container" id="navbar-container">
+<div class="navbar-header pull-left">
+    <a href="javascript:void(0);" class="navbar-brand">
+        <small>
+            <i class="icon-leaf"></i>
+            浦东新区海洋综合管理信息服务系统
+        </small>
+    </a><!-- /.brand -->
+
+</div><!-- /.navbar-header -->
+<div>
+    <div id="zoomDiv" style="display: inline;margin-left: 670px;">
+        <a href="javascript:void(0);" id="zoomIn" style="color: #ffffff">
+            <i><img src="/img/zoomIn.png" height="20px;"/></i>
+            放大
+        </a>
+    </div>
+    <div id="zoomOutDiv" style="display: inline;margin-left: 30px;">
+        <a href="javascript:void(0);" id="zoomOut" style="color: #ffffff">
+            <i><img src="/img/zoomOut.png" height="20px;"/></i>
+            缩小
+        </a>
+    </div>
+    <div id="searchDiv" style="display: inline">
+        <input type="text" placeholder="搜索.........">
+    </div>
+</div>
+
+</div><!-- /.container -->
+</div>
+
+</body>
+</html>
